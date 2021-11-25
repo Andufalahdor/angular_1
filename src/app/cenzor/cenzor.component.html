@@ -1,0 +1,15 @@
+<div class="header">Angular list of prohibited words</div>
+<div class="main">
+    <div class="main-words">Bad words: {{ stringWords }}</div>
+    <div class="main-input">
+        <input type="text" [(ngModel)]="word">
+        <input type="button" value="Add" (click)="addBadWords()">
+        <input type="button" value="Reset" (click)="resetBadWords()">
+    </div>
+    <div class="main-text">
+        <textarea [(ngModel)]="textArea">
+
+        </textarea>
+    </div>
+    <input class="main-button" type="button" value="Cenzor" (click)="cenzorCheck()">
+</div>

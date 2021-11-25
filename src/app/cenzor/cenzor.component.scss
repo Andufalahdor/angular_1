@@ -1,0 +1,46 @@
+* {
+    font-family: sans-serif;
+}
+
+.header {
+    width: 100%;
+    font-size: 36px;
+    height: 80px;
+    background-color: rgb(193, 244, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 33%;
+    margin: 20% auto;
+    background-color: rgb(193, 244, 248);
+    ;
+    &-words {
+        height: 50px;
+    }
+    &-input {
+        display: flex;
+        justify-content: space-between;
+        input[type="text"] {
+            width: 50%;
+        }
+        input[type="button"] {
+            width: 20%;
+        }
+    }
+    &-text {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        textarea {
+            width: 100%;
+            height: 200px;
+            resize: none;
+        }
+    }
+    &-button {
+        width: 100%;
+        padding: 10px;
+    }
+}
