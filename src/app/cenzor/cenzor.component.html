@@ -2,12 +2,12 @@
 <div class="main">
     <div class="main-words">Bad words: {{ stringWords }}</div>
     <div class="main-input">
-        <input type="text" [(ngModel)]="word">
+        <input type="text" [class.error]="isErrorAdd" [(ngModel)]="word" [placeholder]="isErrorAdd? 'Please write a word!' : 'word here..'">
         <input type="button" value="Add" (click)="addBadWords()">
         <input type="button" value="Reset" (click)="resetBadWords()">
     </div>
     <div class="main-text">
-        <textarea [(ngModel)]="textArea">
+        <textarea [(ngModel)]="textArea" [class.error]="isErrorCenzor" [placeholder]="isErrorCenzor? 'Please write text!': 'text here..'">
 
         </textarea>
     </div>
